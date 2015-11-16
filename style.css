@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.45; }
+
+h1, h2 {
+  font-family: "Quarto A", "Quarto B";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.15; }
+
+h3, h4 {
+  font-weight: 300; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 12px; }
+
+h1 {
+  margin: 15px 0; }
+
+h2 {
+  margin: 10px 0; }
+
+h3 {
+  margin: 7px 0; }
+
+h4 {
+  margin: 5px 0; }
+
+h1, h2 {
+  background: linear-gradient(135deg, #f258b8 0%, #f27958 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.logotype {
+  font-size: 20px; }
+
+.white {
+  color: #fff;
+  background: transparent;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor; }
+
+.muted {
+  opacity: 0.6; }
+
+section {
+  padding: 50px; }
+  section .content {
+    max-width: 1400px; }
+
+section.hero {
+  background: linear-gradient(135deg, #f258b8 0%, #f27958 100%); }
+  section.hero img {
+    width: 100%; }
+  section.hero .explainer {
+    border: 4px solid white;
+    padding: 30px 50px;
+    margin-left: -50px;
+    z-index: 1; }
+  section.hero .photo-2-row {
+    margin: -50px 0 -125px; }
+
+/*# sourceMappingURL=style.css.map */
