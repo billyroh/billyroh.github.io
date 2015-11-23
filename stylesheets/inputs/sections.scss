@@ -110,8 +110,25 @@ section.schedule {
     }
     @media screen and (max-width: $width-md) {
       opacity: 0.05;
-      margin-top: -120em;
-      z-index: 1;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+section.about, section.get-involved {
+  @media screen and (max-width: $width-md) {
+    .col-xs-12 {
+      margin-bottom: $spacing-sm;
+      a.button {
+        margin-bottom: $spacing-sm;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+        a.button {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

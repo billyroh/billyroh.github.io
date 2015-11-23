@@ -280,7 +280,17 @@ section.schedule ul.images {
   @media screen and (max-width: 62em) {
     section.schedule ul.images {
       opacity: 0.05;
-      margin-top: -120em;
-      z-index: 1; } }
+      position: absolute;
+      z-index: -1; } }
+
+@media screen and (max-width: 62em) {
+  section.about .col-xs-12, section.get-involved .col-xs-12 {
+    margin-bottom: 15px; }
+    section.about .col-xs-12 a.button, section.get-involved .col-xs-12 a.button {
+      margin-bottom: 15px; }
+    section.about .col-xs-12:last-of-type, section.get-involved .col-xs-12:last-of-type {
+      margin-bottom: 0; }
+      section.about .col-xs-12:last-of-type a.button, section.get-involved .col-xs-12:last-of-type a.button {
+        margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */
