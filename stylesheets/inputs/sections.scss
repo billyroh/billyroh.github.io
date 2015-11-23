@@ -12,6 +12,9 @@ section.hero {
     background-size: cover;
     height: 60vh;
     overflow: hidden;
+    max-width: 1430px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: $width-sm) {
       height: 40vh;
     }

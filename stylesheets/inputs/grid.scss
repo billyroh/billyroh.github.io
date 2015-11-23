@@ -27,8 +27,12 @@ section {
 // Container
 .container-fluid {
   width: 100%;
-  max-width: 1040px;
-  padding: 0 $spacing-lg;
+  max-width: 1430px;
+  padding: 0 $spacing-lg*3;
+
+  @media screen and (max-width: $width-lg) {
+    padding: $spacing-lg;
+  }
 
   @media screen and (max-width: $width-md) {
     padding: $spacing-md;
