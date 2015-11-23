@@ -13,6 +13,7 @@ html(lang="en")
       .container-fluid
         .row.between-md.bottom-xs
           .col-xs-12.col-sm-7.headline
+            a(name='intro')
             h3.logotype.accent WaffleJS
             h1 A night of code, waffles, and karaoke.
             h3
@@ -52,10 +53,11 @@ html(lang="en")
 
     include ./views/schedules/2015-11.jade
     section.schedule: .container-fluid
+      a(name='schedule')
       h2 Schedule
       .row.between-xs
         .col-xs-12.col-md-6: ul.schedule-items
-          each item in schedule 
+          each item in schedule
             if item.type
               li
                 .time
@@ -78,5 +80,40 @@ html(lang="en")
           li: img(src='images/computer.svg')
           li: img(src='images/waffle.svg')
           li: img(src='images/microphone.svg')
+    
+    section.about: .container-fluid
+      a(name='about')
+      h2 About
+      .row.between-xs
+        .col-xs-12.col-md-6
+          h3 Summary
+          p WaffleJS is a meetup about web technology with a side of waffles and karaoke. We meet the first Wednesday of every month.
+          p It’s co-organized by 
+            a(href='https://twitter.com/visnup') Visnu
+            | , 
+            a(href='https://twitter.com/billyroh') Billy
+            | , and 
+            a(href='https://twitter.com/kng') Kelly 
+            | and hosted by Visnu and 
+            a(href='https://twitter.com/nexxylove') Emily
+            | .
+        .col-xs-12.col-md-6
+          h3 Code of Conduct
+          p All participants are expected to follow the 
+            a(href='http://jsconf.com/codeofconduct.html') JSConf Code of Conduct.
+    
+    section.get-involved: .container-fluid
+      a(name='get-involved')
+      h2 Get Involved
+      .row.between-xs
+        .col-xs-12.col-md-6
+          h3 Call for Speakers
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra sed.
+          a.button(href='') Speaker Details
+        .col-xs-12.col-md-6
+          h3 Call for Performers
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra sed.
+          a.button(href='') Performer Details
+      
     
     include ./views/footer.jade

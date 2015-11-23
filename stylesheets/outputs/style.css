@@ -212,12 +212,15 @@ section.hero ul {
   padding: 0; }
   section.hero ul li {
     display: inline-block;
-    margin-right: 50px; }
+    margin-right: 50px;
+    margin-bottom: 15px; }
     @media screen and (max-width: 62em) {
       section.hero ul li {
-        margin-right: 30px; } }
+        margin-right: 30px;
+        margin-bottom: 0; } }
     section.hero ul li:last-of-type {
-      margin-right: 0; }
+      margin-right: 0;
+      margin-bottom: 0; }
 
 section.sponsors .sponsor > img {
   margin-right: 15px;

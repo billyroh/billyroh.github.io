@@ -29,11 +29,14 @@ section.hero {
     li {
       display: inline-block;
       margin-right: $spacing-lg;
+      margin-bottom: $spacing-sm;
       @media screen and (max-width: $width-md) {
         margin-right: $spacing-md;
+        margin-bottom: 0;
       }
       &:last-of-type {
         margin-right: 0;
+        margin-bottom: 0;
       }
     }
   }
