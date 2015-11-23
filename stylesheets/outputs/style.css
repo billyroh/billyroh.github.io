@@ -4,11 +4,6 @@
 body {
   background-color: #FFFDF5;
   border: 5px solid #FD4E29;
-  color: #666562;
-  font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.45;
   padding-bottom: 3em; }
   @media screen and (max-width: 48em) {
     body {
@@ -42,6 +37,13 @@ section {
 @media screen and (max-width: 75em) {
   .show-lg {
     display: none; } }
+body {
+  color: #81807e;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5; }
+
 h1, h2, h3, h4 {
   color: #333231; }
 
@@ -60,10 +62,10 @@ h3 {
   font-size: 20px; }
 
 h4 {
-  font-size: 16px; }
+  font-size: 18px; }
 
 button {
-  font-size: 16px; }
+  font-size: 18px; }
 
 @media screen and (max-width: 48em) {
   h1 {
@@ -73,19 +75,19 @@ button {
     font-size: 20px; }
 
   h3 {
-    font-size: 16px; }
+    font-size: 18px; }
 
   h4 {
-    font-size: 14px; }
+    font-size: 15px; }
 
   p {
-    font-size: 14px; }
+    font-size: 15px; }
 
   a.button {
-    font-size: 14px; }
+    font-size: 15px; }
 
   body {
-    font-size: 14px; } }
+    font-size: 15px; } }
 h1 {
   font-weight: 700; }
 
@@ -113,7 +115,7 @@ h1, h2, h3, h4, p {
   text-align: right; }
 
 .text-muted {
-  color: #666562; }
+  color: #81807e; }
 
 a {
   color: #FD4E29;
@@ -126,6 +128,7 @@ a.button {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   color: #FD4E29;
   display: inline-block;
+  font-weight: 500;
   margin-top: 15px;
   padding: 10px 30px;
   transition: all 150ms ease-in-out; }
@@ -261,8 +264,8 @@ section.schedule .time {
   text-align: right;
   width: 100px; }
   section.schedule .time h4 {
-    color: #B2B1AB;
-    line-height: 1.81; }
+    color: #c1c0be;
+    line-height: 1.62; }
   @media screen and (max-width: 75em) {
     section.schedule .time {
       width: 300px;

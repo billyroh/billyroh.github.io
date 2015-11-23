@@ -10,6 +10,7 @@ a.button {
   box-shadow: 0 2px 3px hsla(0,0,0,0.15);
   color: $accent;
   display: inline-block;
+  font-weight: 500;
   margin-top: $spacing-sm;
   padding: $spacing-xs $spacing-md;
   transition: all 150ms ease-in-out;

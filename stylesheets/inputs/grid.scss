@@ -5,11 +5,6 @@
 body {
   background-color: $background-base;
   border: 5px solid $accent;
-  color: $gray-text;
-  font-family: $body-font;
-  font-size: $font-size-base;
-  font-weight: 400;
-  line-height: 1.45;
   padding-bottom: 3em;
 
   @media screen and (max-width: $width-sm) {
