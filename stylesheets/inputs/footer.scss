@@ -1,0 +1,71 @@
+footer {
+  background-color: $background-base;
+  bottom: 0;
+  box-shadow: inset 5px 0 0 $accent, inset -5px 0 0 $accent, 0 -2px 10px hsla(0,0,0,0.15);;
+  margin-left: -5px;
+  padding: $spacing-xs 0;
+  position: fixed;
+  width: 100%;
+
+  .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline;
+      margin-right: $spacing-md;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a.button {
+    margin-top: 0;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    small {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      opacity: 0.5;
+    }
+  }
+
+  // Remove list, make footer and button full width
+  @media screen and (max-width: $width-sm) {
+    box-shadow: 0 -2px 10px hsla(0,0,0,0.15);;
+    margin-bottom: -6px;
+    margin-left: 0;
+    padding: 0;
+    .container-fluid {
+      padding: 0;
+    }
+    ul {
+      display: none;
+    }
+    a.button {
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+      padding: $spacing-sm;
+      p {
+        float: left;
+        text-align: left;
+        width: 50%;
+      }
+      small {
+        padding-top: 3px;
+        width: 50%;
+        float: left;
+        text-align: right;
+      }
+    }
+  }
+}

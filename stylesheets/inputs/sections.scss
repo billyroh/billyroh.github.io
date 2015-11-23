@@ -1,0 +1,113 @@
+// Hero
+section.hero {
+  .row {
+    margin-bottom: 4em;
+    @media screen and (max-width: $width-md) {
+      margin-bottom: 0;
+    }
+  }
+  .cover-photo  {
+    background: url('/images/photo-1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    overflow: hidden;
+    @media screen and (max-width: $width-sm) {
+      height: 40vh;
+    }
+  }
+  h1 {
+    margin: 0 0 $spacing-sm + 5;
+    @media screen and (max-width: $width-sm) {
+      margin-bottom: 0.5em;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: $spacing-lg;
+      @media screen and (max-width: $width-md) {
+        margin-right: $spacing-md;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Sponsors
+section.sponsors {
+  .sponsor > img {
+    margin-right: $spacing-sm;
+    margin-bottom: $spacing-sm;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .photo {
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: $width-md) {
+      margin-top: $spacing-lg;
+    }
+  }
+}
+
+// Schedule
+section.schedule {
+  ul.schedule-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: $spacing-md 0;
+      border-bottom: 1px solid $dark-white;
+      @media screen and (max-width: $width-md) {
+        padding: $spacing-sm 0;
+      }
+      &.no-description > .time {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .time {
+    margin-left: -120px;
+    margin-top: -6px;
+    position: absolute;
+    text-align: right;
+    width: 100px;
+    h4 {
+      color: $light-text;
+      line-height: 2.15;
+    }
+    @media screen and (max-width: $width-lg) {
+      margin-left: 0;
+      text-align: left;
+      position: relative;
+    }
+  }
+
+  ul.images {
+    list-style: none;
+    li {
+      margin-bottom: 20em;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: $width-md) {
+      opacity: 0.05;
+      margin-top: -120em;
+      z-index: 1;
+    }
+  }
+}

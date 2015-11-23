@@ -1,39 +1,42 @@
 doctype html
 html(lang="en")
   head
-    title= 'WaffleJS &middot; A night of code, waffles, and karaoke.'
-    link(rel='stylesheet', href='normalize.css')
-    link(rel='stylesheet', href='flexboxgrid.min.css')
+    title= 'WaffleJS · A night of code, waffles, and karaoke.'
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='stylesheets/outputs/normalize.css')
+    link(rel='stylesheet', href='stylesheets/outputs/flexboxgrid.min.css')
     link(rel='stylesheet', type="text/css", href='https://cloud.typography.com/7886252/634328/css/fonts.css')
     link(rel='stylesheet', type="text/css", href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
-    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='stylesheets/outputs/style.css')
   body
     section.hero
-      .container-fluid: .row.between-md.bottom-xs
-        .col-xs-12.cover-photo.show-sm.hide-md
-        .col-xs-12.col-md-7.headline
-          h3.logotype.accent WaffleJS
-          h1 A night of code,<br>waffles, and karaoke.
-        .col-xs-12.col-md-5.details
-          table
-            tr
-              th: h4 Date
-              td: h3.text-muted Wednesday, November 4
-            tr
-              th: h4 Time
-              td: h3.text-muted 7—10 PM
-            tr
-              th: h4 Location
-              td: h3.text-muted: a(href='https://goo.gl/maps/0gkOe') SOMA StrEat Food
-            tr
-              td(colspan='2'): p.text-muted
-                | All proceeds go to 
-                a(href='http://girlswhocode.com/') Girls Who Code
-                | .
-      .cover-photo.show-md.hide-sm
+      .container-fluid
+        .row.between-md.bottom-xs
+          .col-xs-12.col-sm-7.headline
+            h3.logotype.accent WaffleJS
+            h1 A night of code, waffles, and karaoke.
+            h3
+              | All proceeds go to 
+              a(href='http://girlswhocode.com/') Girls Who Code
+              | .
+          .col-xs-12.col-sm-5.details
+            ul
+              li
+                h4.text-muted Date
+                h3 Wed, Nov 4
+              li
+                h4.text-muted Time
+                h3 7—10 PM
+              li
+                h4.text-muted Location
+                h3
+                  a(href='https://goo.gl/maps/0gkOe') SOMA StrEat Food 
+                  | (in the 
+                  a(href='http://wafflejs.com/map') barn
+                  | )
+      .cover-photo
+      //- .cover-photo.show-md.hide-sm
     section.sponsors: .container-fluid: .row.between-md.middle-xs
-      .col-xs-12.col-md-6.photo.last-xs.first-md
-        img(src='images/photo-2.jpg')
       .col-xs-12.col-md-5.sponsor
         img(src='images/newrelic.svg')
         img(src='images/opendoor.svg')
@@ -44,106 +47,36 @@ html(lang="en")
          a(href='https://www.opendoor.com/jobs') Opendoor
          | .
         a.button(href='sponsorship') Sponsorship Details
-      
-    
-    -
-      schedule = [
-                    {
-                      time: '7:20 PM',
-                      title: 'Get some tasty waffles and drinks'
-                    },
-                    {
-                      time: '7:20 PM',
-                      type: 'Performer',
-                      name: 'Maria Mora',
-                      handle: '_riamora',
-                      title: 'Opening Performance',
-                      description: 'Maria will be performing a karaoke rendition of A Whole New World from The Little Mermaid.'
-                    },
-                    {
-                      time: '7:30 PM',
-                      title: 'Introductions'
-                    },
-                    {
-                      time: '7:45 PM',
-                      type: 'Speaker',
-                      name: 'Mariko Kosaka',
-                      handle: 'kosamari',
-                      title: 'Kernel and Convolution are Friends (Image Processing with Canvas)',
-                      description: 'As web engineers, we take it for granted that the &lt;img&gt; tag displays an image because it’s a "digital photo." Let’s look at what "a Pixel" is and how you can manipulate it for fun with the Canvas API and JavaScript.'
-                    },
-                    {
-                      time: '8:00 PM',
-                      type: 'Speaker',
-                      name: 'Matt Ranney',
-                      handle: 'mranney',
-                      title: 'Spherical geometry and high performance trees in JavaScript',
-                      description: 'Our planet is a sphere, but thinking in 3D is hard. I’ll explain some of the basics of working with location data, how Uber finds the nearest vehicles, and how you can use trees to make everything fast.'
-                    },
-                    {
-                      time: '7:45 PM',
-                      type: 'Speaker',
-                      name: 'Mariko Kosaka',
-                      handle: 'kosamari',
-                      title: 'Kernel and Convolution are Friends (Image Processing with Canvas)',
-                      description: 'As web engineers, we take it for granted that the &lt;img&gt; tag displays an image because it’s a "digital photo." Let’s look at what "a Pixel" is and how you can manipulate it for fun with the Canvas API and JavaScript.'
-                    },
-                    {
-                      time: '8:25 PM',
-                      title: 'Intermission'
-                    },
-                    {
-                      time: '8:35 PM',
-                      type: 'Performance',
-                      name: 'Evan Minto',
-                      handle: 'evanminto',
-                      title: 'Live performance',
-                      description: 'Evan will be performing some of his original music.'
-                    },
-                    {
-                      time: '8:50 PM',
-                      type: 'Speaker',
-                      name: 'Melinda Lu',
-                      handle: 'skewleft',
-                      title: 'Everything old is new again (hopefully): functional programming in JavaScript',
-                      description: 'Let’s see how a programming paradigm from the 1950s can help us write JavaScript in a concise, elegant, and super-productive way. We’ll talk about React, Redux, hot reloading, and time-travel debugging.'
-                    },
-                    {
-                      time: '8:35 PM',
-                      type: 'Performance',
-                      name: 'Evan Minto',
-                      handle: 'evanminto',
-                      title: 'Live performance',
-                      description: 'Evan will be performing some of his original music.'
-                    },
-                  ]
+      .col-xs-12.col-md-6.photo
+        img(src='images/photo-2.jpg')
 
+    include ./views/schedules/2015-11.jade
     section.schedule: .container-fluid
       h2 Schedule
-      .row: .col-xs-12.col-md-6: ul
-        each item in schedule 
-          if item.type
-            li
-              .time
+      .row.between-xs
+        .col-xs-12.col-md-6: ul.schedule-items
+          each item in schedule 
+            if item.type
+              li
+                .time
+                  h4
+                    | #{item.time} 
+                    span.show-xs.hide-sm &middot;
+                  h4 #{item.type}
                 h4
-                  | #{item.time}<br>
-                  | #{item.type}
-              h4
-                a(href='https://www.twitter.com/#{item.handle}') #{item.name} &middot; @#{item.handle}
-              h3 #{item.title}
-              p #{item.description}
-          else
-            li.no-description
-              .time: h4 #{item.time}
-              h3 #{item.title}
-    footer: .container-fluid
-      .row.between-xs.middle-sm
-        .col-xs-1.col-sm-7: ul
-          li: a(href='') Intro
-          li: a(href='') Schedule
-          li: a(href='') About
-          li: a(href='') Get Involved
-          li: a(href='') Past Events
-        .col-xs-12.col-sm-5.text-right: a.button.primary(href='https://ti.to/november')
-          p Buy Waffle - $10
-          small Ticket Included
+                  each person, index in item.people
+                    a(href='https://www.twitter.com/#{person.handle}') #{person.name} &middot; @#{person.handle} 
+                    if index !== item.people.length - 1
+                      span.text-muted & 
+                h3 #{item.title}
+                p #{item.description}
+            else
+              li.no-description
+                .time: h4 #{item.time}
+                h3 #{item.title}
+        .col-md-5: ul.images
+          li: img(src='images/computer.svg')
+          li: img(src='images/waffle.svg')
+          li: img(src='images/microphone.svg')
+    
+    include ./views/footer.jade

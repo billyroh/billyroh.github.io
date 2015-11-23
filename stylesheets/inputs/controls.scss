@@ -1,0 +1,31 @@
+a {
+  color: $accent;
+  text-decoration: none;
+}
+
+a.button {
+  background: transparent;
+  border: 3px solid $accent;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px hsla(0,0,0,0.15);
+  color: $accent;
+  display: inline-block;
+  margin-top: $spacing-sm;
+  padding: $spacing-xs $spacing-md;
+  transition: all 150ms ease-in-out;
+
+  &.primary {
+    border: none;
+    background: $accent;
+    color: #fff;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 15px hsla(0,0,0,0.25);
+  }
+
+  &:active, &:focus {
+    box-shadow: 0 1px 1px hsla(0,0,0,0.10);
+    outline: 0;
+  }
+}

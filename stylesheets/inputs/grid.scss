@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-base;
+  border: 5px solid $accent;
+  color: $gray-text;
+  font-family: $body-font;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1.45;
+  padding-bottom: 3em;
+
+  @media screen and (max-width: $width-sm) {
+    border: none;
+    border-top: 5px solid $accent;
+    border-bottom: 5px solid $accent;
+  }
+}
+
+section {
+  margin: $spacing-lg*2 0;
+  @media screen and (max-width: $width-md) {
+    margin: $spacing-md 0;
+  }
+  @media screen and (max-width: $width-sm) {
+    margin: $spacing-sm 0;
+  }
+}
+
+// Container
+.container-fluid {
+  width: 100%;
+  max-width: 1040px;
+  padding: 0 $spacing-lg;
+
+  @media screen and (max-width: $width-md) {
+    padding: $spacing-md;
+  }
+
+  @media screen and (max-width: $width-sm) {
+    padding: $spacing-sm;
+  }
+}
