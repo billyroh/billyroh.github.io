@@ -138,6 +138,9 @@ a.button {
   a.button:active, a.button:focus {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     outline: 0; }
+  @media screen and (max-width: 48em) {
+    a.button {
+      padding: 10px 15px; } }
 
 footer {
   background-color: #FFFDF5;
