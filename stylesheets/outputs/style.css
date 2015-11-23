@@ -2,14 +2,14 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #FFFDF5;
-  border: 5px solid #FD4E29;
+  background-color: #fffdf5;
+  border: 5px solid #fd4e2b;
   padding-bottom: 3em; }
   @media screen and (max-width: 48em) {
     body {
       border: none;
-      border-top: 5px solid #FD4E29;
-      border-bottom: 5px solid #FD4E29; } }
+      border-top: 5px solid #fd4e2b;
+      border-bottom: 5px solid #fd4e2b; } }
 
 section {
   margin: 100px 0; }
@@ -45,7 +45,7 @@ body {
   line-height: 1.5; }
 
 h1, h2, h3, h4 {
-  color: #333231; }
+  color: #343332; }
 
 h1, h2 {
   font-family: "Quarto A", "Quarto B", serif;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, p {
   font-weight: 800; }
 
 .accent {
-  color: #FD4E29; }
+  color: #fd4e2b; }
 
 .text-right {
   text-align: right; }
@@ -118,15 +118,15 @@ h1, h2, h3, h4, p {
   color: #81807e; }
 
 a {
-  color: #FD4E29;
+  color: #fd4e2b;
   text-decoration: none; }
 
 a.button {
   background: transparent;
-  border: 3px solid #FD4E29;
+  border: 3px solid #fd4e2b;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-  color: #FD4E29;
+  color: #fd4e2b;
   display: inline-block;
   font-weight: 500;
   margin-top: 15px;
@@ -134,7 +134,7 @@ a.button {
   transition: all 150ms ease-in-out; }
   a.button.primary {
     border: none;
-    background: #FD4E29;
+    background: #fd4e2b;
     color: #fff; }
   a.button:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25); }
@@ -146,9 +146,9 @@ a.button {
       padding: 10px 15px; } }
 
 footer {
-  background-color: #FFFDF5;
+  background-color: #fffdf5;
   bottom: 0;
-  box-shadow: inset 5px 0 0 #FD4E29, inset -5px 0 0 #FD4E29, 0 -2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 5px 0 0 #fd4e2b, inset -5px 0 0 #fd4e2b, 0 -2px 10px rgba(0, 0, 0, 0.15);
   margin-left: -5px;
   padding: 10px 0;
   position: fixed;
@@ -251,7 +251,7 @@ section.schedule ul.schedule-items {
   padding: 0; }
   section.schedule ul.schedule-items li {
     padding: 30px 0;
-    border-bottom: 1px solid #F4F2EA; }
+    border-bottom: 1px solid #ededde; }
     @media screen and (max-width: 62em) {
       section.schedule ul.schedule-items li {
         padding: 15px 0; } }
