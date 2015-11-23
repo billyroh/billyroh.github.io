@@ -81,15 +81,16 @@ section.schedule {
 
   .time {
     margin-left: -120px;
-    margin-top: -6px;
+    margin-top: -3px;
     position: absolute;
     text-align: right;
     width: 100px;
     h4 {
       color: $light-text;
-      line-height: 2.15;
+      line-height: 1.81;
     }
     @media screen and (max-width: $width-lg) {
+      width: 300px;
       margin-left: 0;
       text-align: left;
       position: relative;

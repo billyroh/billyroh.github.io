@@ -43,3 +43,15 @@ section {
     padding: $spacing-sm;
   }
 }
+
+@media screen and (min-width: $width-lg) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $width-lg) {
+  .show-lg {
+    display: none;
+  }
+}

@@ -60,8 +60,8 @@ html(lang="en")
                 .time
                   h4
                     | #{item.time} 
-                    span.show-xs.hide-sm &middot;
-                  h4 #{item.type}
+                    span.hide-lg &middot; #{item.type}
+                  h4.show-lg #{item.type}
                 h4
                   each person, index in item.people
                     a(href='https://www.twitter.com/#{person.handle}') #{person.name} &middot; @#{person.handle} 
