@@ -290,7 +290,7 @@ section.schedule .time {
 section.schedule ul.images {
   list-style: none; }
   section.schedule ul.images li {
-    margin-bottom: 20em; }
+    margin-bottom: 12em; }
     section.schedule ul.images li:last-of-type {
       margin-bottom: 0; }
     section.schedule ul.images li img {
@@ -299,7 +299,9 @@ section.schedule ul.images {
     section.schedule ul.images {
       opacity: 0.05;
       position: absolute;
-      z-index: -1; } }
+      z-index: -1; }
+      section.schedule ul.images li {
+        margin-bottom: 20em; } }
 
 @media screen and (max-width: 62em) {
   section.about .col-xs-12, section.get-involved .col-xs-12 {

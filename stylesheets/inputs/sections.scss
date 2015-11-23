@@ -103,7 +103,7 @@ section.schedule {
   ul.images {
     list-style: none;
     li {
-      margin-bottom: 20em;
+      margin-bottom: 12em;
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -115,6 +115,9 @@ section.schedule {
       opacity: 0.05;
       position: absolute;
       z-index: -1;
+      li {
+        margin-bottom: 20em
+      }
     }
   }
 }
