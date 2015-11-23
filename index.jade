@@ -23,11 +23,8 @@ html(lang="en")
           .col-xs-12.col-sm-5.details
             ul
               li
-                h4.text-muted Date
-                h3 Wed, Nov 4
-              li
-                h4.text-muted Time
-                h3 7—10 PM
+                h4.text-muted Date & Time
+                h3 Wednesday, November 4 at 7 PM
               li
                 h4.text-muted Location
                 h3
@@ -114,6 +111,23 @@ html(lang="en")
           h3 Call for Performers
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra sed.
           a.button(href='') Performer Details
+    
+    section.transparency: .container-fluid
+      a(name='get-involved')
+      h2 Transparency
+      .row.between-xs
+        .col-xs-12.col-md-6
+          h3 Finance
+          p We donate all proceeds every month. Check out 
+            a(href='https://docs.google.com/spreadsheets/d/1D3_RS7sMBZZxJRSmrTM_3Rf0ZyTfD3ApbftW8TwZ468/') our spreadsheet 
+            | to learn more.
+        .col-xs-12.col-md-6
+          h3 Planning
+          p We plan everything out in the open. We track our issues on 
+            a(href='https://github.com/wafflejs/wafflejs.github.io/issues') GitHub
+            | and organize on 
+            a(href='http://slack.borojs.com/') Slack
+            | . Feel free to join and say hi!
       
     
     include ./views/footer.jade
