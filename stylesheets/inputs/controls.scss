@@ -10,15 +10,19 @@ a.button {
   box-shadow: 0 2px 3px hsla(0,0,0,0.15);
   color: $accent;
   display: inline-block;
+  font-size: $font-size-small;
   font-weight: 500;
   margin-top: $spacing-sm;
-  padding: $spacing-xs $spacing-md;
+  padding: $spacing-xs $spacing-sm;
   transition: all 150ms ease-in-out;
+  text-transform: uppercase;
 
   &.primary {
     border: none;
     background: $accent;
-    color: #fff;
+    h4 {
+      color: #fff;
+    }
   }
 
   &:hover {
@@ -31,6 +35,6 @@ a.button {
   }
 
   @media screen and (max-width: $width-sm) {
-    padding: $spacing-xs $spacing-sm;
+    font-size: $font-size-x-small;
   }
 }

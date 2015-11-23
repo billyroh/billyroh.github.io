@@ -77,20 +77,20 @@ section.schedule {
         padding: $spacing-sm 0;
       }
       &.no-description > .time {
-        margin-top: 0;
+        margin-top: 4px;
       }
     }
   }
 
   .time {
-    margin-left: -120px;
-    margin-top: -3px;
+    margin-left: -140px;
+    margin-top: -6px;
     position: absolute;
     text-align: right;
-    width: 100px;
+    width: 110px;
     h4 {
       color: $light-text;
-      line-height: 1.62;
+      line-height: 2.2;
     }
     @media screen and (max-width: $width-lg) {
       width: 300px;

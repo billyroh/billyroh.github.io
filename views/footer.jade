@@ -1,11 +1,12 @@
 footer: .container-fluid
   .row.between-xs.middle-sm
     .col-xs-1.col-sm-7: ul
-      li: a(href='#intro') Intro
-      li: a(href='#schedule') Schedule
-      li: a(href='#about') About
-      li: a(href='#get-involved') Get Involved
-      li: a(href='#past-events') Past Events
-    .col-xs-12.col-sm-5.text-right: a.button.primary(href='https://ti.to/wafflejs/november')
-      p Buy Waffle — $10
-      small Ticket Included
+      li: h4: a.inactive(href='#intro') Intro
+      li: h4: a.inactive(href='#schedule') Schedule
+      li: h4: a.inactive(href='#about') About
+      li: h4: a.inactive(href='#get-involved') Get Involved
+      li: h4: a.inactive(href='#past-events') Past Events
+    .col-xs-12.col-sm-5.text-right
+      a.button.primary(href='https://ti.to/wafflejs/november')
+        h4 Buy Waffle — $10<br>
+        small.white.text-muted Ticket Included
