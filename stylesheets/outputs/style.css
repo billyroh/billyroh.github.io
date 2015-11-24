@@ -251,6 +251,13 @@ section.hero ul {
       margin-right: 0;
       margin-bottom: 0; }
 
+@media screen and (max-width: 62em) {
+  section.about .photo {
+    margin-top: 50px; } }
+@media screen and (max-width: 48em) {
+  section.about .photo {
+    margin-top: 30px; } }
+
 section.schedule ul.schedule-items {
   list-style: none;
   margin: 0;

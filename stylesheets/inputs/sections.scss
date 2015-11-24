@@ -45,6 +45,19 @@ section.hero {
   }
 }
 
+section.about {
+  @media screen and (max-width: $width-md) {
+    .photo {
+      margin-top: $spacing-lg;
+    }
+  }
+  @media screen and (max-width: $width-sm) {
+    .photo {
+      margin-top: $spacing-md;
+    }
+  }
+}
+
 // Schedule
 section.schedule {
   ul.schedule-items {
