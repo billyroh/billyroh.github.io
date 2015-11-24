@@ -16,6 +16,9 @@ body {
 
 section {
   margin: $spacing-lg*2 0;
+  img {
+    width: 100%;
+  }
   @media screen and (max-width: $width-md) {
     margin: $spacing-md 0;
   }

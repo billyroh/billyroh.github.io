@@ -12,7 +12,7 @@ html(lang="en")
     section.hero
       .container-fluid
         .row.between-md.bottom-xs
-          .col-xs-12.col-md-7.col-lg-5.headline
+          .col-xs-12.col-md-7.col-lg-6.headline
             a(name='intro')
             h3.logotype.accent WaffleJS
             h1 A night of code, waffles, and karaoke.
@@ -33,18 +33,13 @@ html(lang="en")
                   a(href='http://wafflejs.com/map') barn
                   | )
       .cover-photo
-      //- .cover-photo.show-md.hide-sm
-    section.sponsors: .container-fluid: .row.between-md.middle-xs
-      .col-xs-12.col-md-5.sponsor
-        img(src='images/newrelic.svg')
-        img(src='images/opendoor.svg')
-        p
-         | This month's WaffleJS is sponsored by 
-         a(href='https://www.newrelic.com/jobs') New Relic
-         |  and 
-         a(href='https://www.opendoor.com/jobs') Opendoor
-         | .
-        a.button(href='sponsorship') Sponsorship Details
+      
+    section.about: .container-fluid: .row.between-md.middle-xs
+      .col-xs-12.col-md-5
+        h2 About
+        p WaffleJS is a meetup about web technology with a side of waffles and karaoke. We meet on the first Wednesday of every month.
+        p All participants are expected to follow the 
+          a(href='http://jsconf.com/codeofconduct.html') JSConf Code of Conduct.
       .col-xs-12.col-md-6.photo
         img(src='images/photo-2.jpg')
 
@@ -78,26 +73,24 @@ html(lang="en")
           li: img(src='images/waffle.svg')
           li: img(src='images/microphone.svg')
     
-    section.about: .container-fluid
+    section.sponsors: .container-fluid: .row.between-md.middle-xs
+    
+    section.sponsors: .container-fluid
       a(name='about')
-      h2 About
+      h2 Sponsors
       .row.between-xs
         .col-xs-12.col-md-6
-          h3 Summary
-          p WaffleJS is a meetup about web technology with a side of waffles and karaoke. We meet on the first Wednesday of every month.
-          p It’s co-organized by 
-            a(href='https://twitter.com/visnup') Visnu
-            | , 
-            a(href='https://twitter.com/billyroh') Billy
-            | , and 
-            a(href='https://twitter.com/kng') Kelly 
-            | and hosted by Visnu and 
-            a(href='https://twitter.com/nexxylove') Emily
-            | .
-        .col-xs-12.col-md-6
-          h3 Code of Conduct
-          p All participants are expected to follow the 
-            a(href='http://jsconf.com/codeofconduct.html') JSConf Code of Conduct.
+          p
+           | This month's WaffleJS is sponsored by 
+           a(href='https://www.newrelic.com/jobs') New Relic
+           |  and 
+           a(href='https://www.opendoor.com/jobs') Opendoor
+           | .
+          a.button(href='sponsorship') Sponsorship Details
+        .col-xs-12.col-md-5
+          .sponsor: img(src='images/newrelic.svg')
+          .sponsor: img(src='images/opendoor.svg')
+    
     
     section.get-involved: .container-fluid
       a(name='get-involved')

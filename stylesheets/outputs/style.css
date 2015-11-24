@@ -13,6 +13,8 @@ body {
 
 section {
   margin: 100px 0; }
+  section img {
+    width: 100%; }
   @media screen and (max-width: 62em) {
     section {
       margin: 30px 0; } }
@@ -249,17 +251,6 @@ section.hero ul {
       margin-right: 0;
       margin-bottom: 0; }
 
-section.sponsors .sponsor > img {
-  margin-right: 15px;
-  margin-bottom: 15px; }
-  section.sponsors .sponsor > img:last-of-type {
-    margin-right: 0; }
-section.sponsors .photo img {
-  width: 100%; }
-@media screen and (max-width: 62em) {
-  section.sponsors .photo {
-    margin-top: 50px; } }
-
 section.schedule ul.schedule-items {
   list-style: none;
   margin: 0;
@@ -293,8 +284,6 @@ section.schedule ul.images {
     margin-bottom: 12em; }
     section.schedule ul.images li:last-of-type {
       margin-bottom: 0; }
-    section.schedule ul.images li img {
-      width: 100%; }
   @media screen and (max-width: 62em) {
     section.schedule ul.images {
       opacity: 0.05;
@@ -303,14 +292,22 @@ section.schedule ul.images {
       section.schedule ul.images li {
         margin-bottom: 20em; } }
 
+section.sponsors .sponsor {
+  width: 120px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px; }
+  section.sponsors .sponsor:last-of-type {
+    margin-right: 0; }
+
 @media screen and (max-width: 62em) {
-  section.about .col-xs-12, section.get-involved .col-xs-12 {
+  section.get-involved .col-xs-12 {
     margin-bottom: 15px; }
-    section.about .col-xs-12 a.button, section.get-involved .col-xs-12 a.button {
+    section.get-involved .col-xs-12 a.button {
       margin-bottom: 15px; }
-    section.about .col-xs-12:last-of-type, section.get-involved .col-xs-12:last-of-type {
+    section.get-involved .col-xs-12:last-of-type {
       margin-bottom: 0; }
-      section.about .col-xs-12:last-of-type a.button, section.get-involved .col-xs-12:last-of-type a.button {
+      section.get-involved .col-xs-12:last-of-type a.button {
         margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -45,25 +45,6 @@ section.hero {
   }
 }
 
-// Sponsors
-section.sponsors {
-  .sponsor > img {
-    margin-right: $spacing-sm;
-    margin-bottom: $spacing-sm;
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-  .photo {
-    img {
-      width: 100%;
-    }
-    @media screen and (max-width: $width-md) {
-      margin-top: $spacing-lg;
-    }
-  }
-}
-
 // Schedule
 section.schedule {
   ul.schedule-items {
@@ -107,9 +88,6 @@ section.schedule {
       &:last-of-type {
         margin-bottom: 0;
       }
-      img {
-        width: 100%;
-      }
     }
     @media screen and (max-width: $width-md) {
       opacity: 0.05;
@@ -122,7 +100,20 @@ section.schedule {
   }
 }
 
-section.about, section.get-involved {
+// Sponsors
+section.sponsors {
+  .sponsor {
+    width: 120px;
+    float: left;
+    margin-right: $spacing-sm;
+    margin-bottom: $spacing-sm;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+section.get-involved {
   @media screen and (max-width: $width-md) {
     .col-xs-12 {
       margin-bottom: $spacing-sm;
