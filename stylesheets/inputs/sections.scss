@@ -1,5 +1,8 @@
 // Hero
 section.hero {
+  background-image: url('/images/background.svg');
+  background-repeat: repeat;
+  padding-bottom: 0;
   .row {
     margin-bottom: 4em;
     @media screen and (max-width: $width-md) {

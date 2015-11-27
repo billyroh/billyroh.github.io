@@ -15,15 +15,15 @@ body {
 }
 
 section {
-  margin: $spacing-lg*2 0;
+  padding: $spacing-lg*2 0;
   img {
     width: 100%;
   }
   @media screen and (max-width: $width-md) {
-    margin: $spacing-md 0;
+    padding: $spacing-md 0;
   }
   @media screen and (max-width: $width-sm) {
-    margin: $spacing-sm 0;
+    padding: $spacing-sm 0;
   }
 }
 

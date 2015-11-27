@@ -12,15 +12,15 @@ body {
       border-bottom: 5px solid #fd4e2b; } }
 
 section {
-  margin: 100px 0; }
+  padding: 100px 0; }
   section img {
     width: 100%; }
   @media screen and (max-width: 62em) {
     section {
-      margin: 30px 0; } }
+      padding: 30px 0; } }
   @media screen and (max-width: 48em) {
     section {
-      margin: 15px 0; } }
+      padding: 15px 0; } }
 
 .container-fluid {
   width: 100%;
@@ -213,43 +213,47 @@ footer {
           text-align: right;
           width: 50%; } }
 
-section.hero .row {
-  margin-bottom: 4em; }
-  @media screen and (max-width: 62em) {
-    section.hero .row {
-      margin-bottom: 0; } }
-section.hero .cover-photo {
-  background: url("/images/photo-1.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  overflow: hidden;
-  max-width: 1430px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media screen and (max-width: 48em) {
-    section.hero .cover-photo {
-      height: 40vh; } }
-section.hero h1 {
-  margin: 0 0 20px; }
-  @media screen and (max-width: 48em) {
-    section.hero h1 {
-      margin-bottom: 0.5em; } }
-section.hero ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  section.hero ul li {
-    display: inline-block;
-    margin-right: 50px;
-    margin-bottom: 15px; }
+section.hero {
+  background-image: url("/images/background.svg");
+  background-repeat: repeat;
+  padding-bottom: 0; }
+  section.hero .row {
+    margin-bottom: 4em; }
     @media screen and (max-width: 62em) {
-      section.hero ul li {
-        margin-right: 30px;
+      section.hero .row {
         margin-bottom: 0; } }
-    section.hero ul li:last-of-type {
-      margin-right: 0;
-      margin-bottom: 0; }
+  section.hero .cover-photo {
+    background: url("/images/photo-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    overflow: hidden;
+    max-width: 1430px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 48em) {
+      section.hero .cover-photo {
+        height: 40vh; } }
+  section.hero h1 {
+    margin: 0 0 20px; }
+    @media screen and (max-width: 48em) {
+      section.hero h1 {
+        margin-bottom: 0.5em; } }
+  section.hero ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    section.hero ul li {
+      display: inline-block;
+      margin-right: 50px;
+      margin-bottom: 15px; }
+      @media screen and (max-width: 62em) {
+        section.hero ul li {
+          margin-right: 30px;
+          margin-bottom: 0; } }
+      section.hero ul li:last-of-type {
+        margin-right: 0;
+        margin-bottom: 0; }
 
 @media screen and (max-width: 62em) {
   section.about .photo {
