@@ -45,6 +45,9 @@ h1, h2, h3, h4, p { margin: 0.5em 0; }
   font-family: $header-font;
   font-size: $font-size-medium;
   font-weight: 800;
+  @media screen and (max-width: $width-md) {
+    font-size: $font-size-small;
+  }
 }
 
 .accent {

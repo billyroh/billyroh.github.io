@@ -5,7 +5,7 @@
 body {
   background-color: $background-base;
   border: 5px solid $accent;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 
   @media screen and (max-width: $width-sm) {
     border: none;
@@ -15,7 +15,7 @@ body {
 }
 
 section {
-  padding: $spacing-lg*2 0;
+  padding: $spacing-lg 0;
   img {
     width: 100%;
   }

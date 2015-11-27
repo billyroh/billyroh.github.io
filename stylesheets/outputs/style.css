@@ -4,7 +4,7 @@
 body {
   background-color: #fffdf5;
   border: 5px solid #fd4e2b;
-  padding-bottom: 3em; }
+  padding-bottom: 5em; }
   @media screen and (max-width: 48em) {
     body {
       border: none;
@@ -12,7 +12,7 @@ body {
       border-bottom: 5px solid #fd4e2b; } }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
   section img {
     width: 100%; }
   @media screen and (max-width: 62em) {
@@ -115,6 +115,9 @@ h1, h2, h3, h4, p {
   font-family: "Quarto A", "Quarto B", serif;
   font-size: 24px;
   font-weight: 800; }
+  @media screen and (max-width: 62em) {
+    .logotype {
+      font-size: 15px; } }
 
 .accent {
   color: #fd4e2b; }
@@ -150,6 +153,8 @@ a.button {
     background: #fd4e2b; }
     a.button.primary h4 {
       color: #fff; }
+  a.button a.inactive {
+    color: #81807e; }
   a.button:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25); }
   a.button:active, a.button:focus {
@@ -170,19 +175,9 @@ footer {
   footer .container-fluid {
     padding-top: 0;
     padding-bottom: 0; }
-  footer ul {
-    padding: 0;
-    list-style: none; }
-    footer ul li {
-      display: inline;
-      margin-right: 30px; }
-      footer ul li:last-of-type {
-        margin-right: 0; }
-      footer ul li h4 {
-        display: inline;
-        margin: 0; }
-      footer ul li a.inactive {
-        color: #81807e; }
+  footer ul > li > h4 {
+    display: inline;
+    margin: 0; }
   footer a.button {
     margin-top: 0;
     text-align: center; }
@@ -215,45 +210,33 @@ footer {
 
 section.hero {
   background-image: url("/images/background.svg");
-  background-repeat: repeat;
-  padding-bottom: 0; }
-  section.hero .row {
-    margin-bottom: 4em; }
-    @media screen and (max-width: 62em) {
-      section.hero .row {
-        margin-bottom: 0; } }
-  section.hero .cover-photo {
-    background: url("/images/photo-1.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 60vh;
-    overflow: hidden;
-    max-width: 1430px;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (max-width: 48em) {
-      section.hero .cover-photo {
-        height: 40vh; } }
+  background-repeat: repeat; }
   section.hero h1 {
     margin: 0 0 20px; }
     @media screen and (max-width: 48em) {
       section.hero h1 {
         margin-bottom: 0.5em; } }
-  section.hero ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    section.hero ul li {
-      display: inline-block;
-      margin-right: 50px;
-      margin-bottom: 15px; }
-      @media screen and (max-width: 62em) {
-        section.hero ul li {
-          margin-right: 30px;
-          margin-bottom: 0; } }
-      section.hero ul li:last-of-type {
-        margin-right: 0;
-        margin-bottom: 0; }
+  section.hero ul > li {
+    margin-bottom: 15px; }
+    @media screen and (max-width: 62em) {
+      section.hero ul > li {
+        margin-bottom: 0; } }
+    section.hero ul > li:last-of-type {
+      margin-right: 0;
+      margin-bottom: 0; }
+
+section.cover-photo {
+  background: url("/images/photo-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  overflow: hidden;
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 48em) {
+    section.cover-photo {
+      height: 40vh; } }
 
 @media screen and (max-width: 62em) {
   section.about .photo {
@@ -319,6 +302,20 @@ section.sponsors .sponsor {
     section.get-involved .col-xs-12:last-of-type {
       margin-bottom: 0; }
       section.get-involved .col-xs-12:last-of-type a.button {
+        margin-bottom: 0; } }
+
+ul.inline {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.inline li {
+    display: inline-block;
+    margin-right: 30px; }
+    ul.inline li:last-of-type {
+      margin-right: 0; }
+    @media screen and (max-width: 62em) {
+      ul.inline li {
+        margin-right: 15px;
         margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,23 +12,9 @@ footer {
     padding-bottom: 0;
   }
 
-  ul {
-    padding: 0;
-    list-style: none;
-    li {
-      display: inline;
-      margin-right: $spacing-md;
-      &:last-of-type {
-        margin-right: 0;
-      }
-      h4 {
-        display: inline;
-        margin: 0;
-      }
-      a.inactive {
-        color: $gray-text;
-      }
-    }
+  ul > li > h4 {
+    display: inline;
+    margin: 0;
   }
 
   a.button {
