@@ -20,6 +20,7 @@ section.hero {
   }
 }
 
+// Cover Photo
 section.cover-photo {
   background: url('/images/photo-1.jpg');
   background-position: center;
@@ -34,12 +35,9 @@ section.cover-photo {
   }
 }
 
+// About
 section.about {
-  @media screen and (max-width: $width-md) {
-    .photo {
-      margin-top: $spacing-lg;
-    }
-  }
+  margin-top: $spacing-lg;
   @media screen and (max-width: $width-sm) {
     .photo {
       margin-top: $spacing-md;
@@ -86,6 +84,7 @@ section.schedule {
   ul.images {
     list-style: none;
     li {
+      margin-top: 3em;
       margin-bottom: 12em;
       &:last-of-type {
         margin-bottom: 0;
@@ -115,6 +114,7 @@ section.sponsors {
   }
 }
 
+// Get Involved
 section.get-involved {
   @media screen and (max-width: $width-md) {
     .col-xs-12 {

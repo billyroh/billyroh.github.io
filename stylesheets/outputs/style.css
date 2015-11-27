@@ -238,12 +238,11 @@ section.cover-photo {
     section.cover-photo {
       height: 40vh; } }
 
-@media screen and (max-width: 62em) {
-  section.about .photo {
-    margin-top: 50px; } }
-@media screen and (max-width: 48em) {
-  section.about .photo {
-    margin-top: 30px; } }
+section.about {
+  margin-top: 50px; }
+  @media screen and (max-width: 48em) {
+    section.about .photo {
+      margin-top: 30px; } }
 
 section.schedule ul.schedule-items {
   list-style: none;
@@ -275,6 +274,7 @@ section.schedule .time {
 section.schedule ul.images {
   list-style: none; }
   section.schedule ul.images li {
+    margin-top: 3em;
     margin-bottom: 12em; }
     section.schedule ul.images li:last-of-type {
       margin-bottom: 0; }
