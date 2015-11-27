@@ -162,9 +162,9 @@ a.button {
 footer {
   background-color: #fffdf5;
   bottom: 0;
-  box-shadow: inset 5px 0 0 #fd4e2b, inset -5px 0 0 #fd4e2b, inset 0 -5px 0 #fd4e2b, 0 -2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 5px 0 0 #fd4e2b, inset -5px 0 0 #fd4e2b, 0 -2px 10px rgba(0, 0, 0, 0.15);
   margin-left: -5px;
-  padding: 10px 0 15px;
+  padding: 10px 0 10px;
   position: fixed;
   width: 100%; }
   footer .container-fluid {
